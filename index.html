@@ -37,7 +37,7 @@
                 left: 0%;
             }
 
-  
+
 
             100% {
                 bottom: 0;
@@ -74,13 +74,41 @@
 
 
         @media screen and (max-width:600px) {
-            .rocket {
-                left: -95%;
+            @keyframes slidingup {
+                0% {
+                    bottom: 0;
+                }
+
+                50% {
+                    bottom: 100%;
+                    left: 200px;
+                }
+
+                100% {
+                    bottom: 100%;
+                    left: 400px;
+                }
             }
 
-            img {
-                width: 75%;
+            @keyframes slidingdown {
+                0% {
+                    bottom: 90%;
+                    left: 0%;
+                }
+
+
+
+                100% {
+                    bottom: 0;
+                    left: 250px;
+                }
             }
+
+            .rocket {
+                left: 0%;
+                width: 55%;
+            }
+
         }
     </style>
 </head>
